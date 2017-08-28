@@ -6,7 +6,7 @@ echo LINUXTMP = "%LINUXTMP%"
 ECHO --- Running Linux installation.  You will be prompted for your Ubuntu user's password:
 REM One big long command to be absolutely sure we're not prompted for a password repeatedly
 
-echo yes ^| add-apt-repository ppa:aseering/wsl-pulseaudio > "%TMP%\script.sh"
+echo yes ^| add-apt-repository ppa:therealkenc/wsl-pulseaudio > "%TMP%\script.sh"
 echo apt-get update >> "%TMP%\script.sh"
 echo apt-get -y install pulseaudio unzip >> "%TMP%\script.sh"
 echo sed -i 's/; default-server =/default-server = 127.0.0.1/' /etc/pulse/client.conf >> "%TMP%\script.sh"
